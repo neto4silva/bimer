@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Bimer UP - Login</title>
+</head>
+<body>
+  <div class="card">
+    <div class="bg">
+      <img class="card-imagem" src="./assets/Bimer-logo-light.svg" alt="">
+      <div class="input-container">
+        <input class="input-user" type="text" id="input" required="">
+        <label for="input" class="label">Usuario</label>
+        <div class="underline"></div>
+      </div> 
+      <div class="input-container">
+        <input class="input-psw" type="password" id="input-psw" required="">
+        <label for="input" class="label">Senha</label>
+        <div class="underline"></div>
+      </div>
+
+      <label class="ui-switch">
+        <input type="checkbox" id="chk">
+        <div class="slider">
+          <div class="circle"></div>
+        </div>
+      </label>
+
+      <a class="forgot-psw" href="#">Esqueceu a senha ?</a>
+      
+      <button>
+        <p>Login</p>
+        <svg stroke-width="4" stroke="currentColor" viewBox="0 0 24 24" fill="none" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linejoin="round" stroke-linecap="round"></path>
+        </svg>
+      </button>
+    </div>
+    <div class="blob"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
