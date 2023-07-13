@@ -13,6 +13,7 @@
   align-items: center;
   justify-content: center;
   box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  margin: 2e;
 }
 
 .dark .card {
@@ -169,26 +170,16 @@
 }
 
 button {
+  --primary-color: #111;
+  --hovered-color: #0d4f83;
   padding: 0;
   margin: 0;
   border: none;
   background: none;
-  position: absolute;
   bottom: -65px;
   left: 265px; 
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-weight: 600;
-  cursor: pointer;
-  display: block;
-}
-
-.input-user {
-  text-transform: uppercase;
-}
-
-button {
-  --primary-color: #111;
-  --hovered-color: #0d4f83;
+  cursor: pointer;  
   position: relative;
   display: flex;
   font-weight: 600;
@@ -197,6 +188,9 @@ button {
   align-items: center;
 }
 
+.input-user {
+  text-transform: uppercase;
+}
 .dark button {
   --primary-color: #ffffff;
   --hovered-color: #0077ff;
@@ -358,5 +352,23 @@ button svg {
 
   100% {
     transform: translate(-160%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .blob {
+    background: #ffffff;
+  }
+  
+  .card{
+    box-shadow: none
+  }
+
+  .dark .blob {
+    background: #001c3b;
+  }
+
+  .dark .card{
+    box-shadow: none
   }
 }
