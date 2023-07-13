@@ -12,4 +12,7 @@ chk.addEventListener('change', () => {
   }
 });
 
-
+const loginButton = document.getElementById('loginButton');
+loginButton.addEventListener('click', () => {
+  window.location.href = 'inicial.html';
+});
